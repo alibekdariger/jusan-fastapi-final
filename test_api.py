@@ -5,7 +5,7 @@ client = TestClient(app)
 
 def test_sum_to_n():
     response = client.get("/sum1n/10")
-    assert response.status_code == 202
+    assert response.status_code == 200
     assert response.json() == {"result": 55}
     
 '''
